@@ -14,7 +14,7 @@ else:
 # Fixed values
 guidStr = "0-ZZZ12345678"
 destinationStr = "0-AAA12345678"
-formatStr = "urn:example:sensor:ppfd"
+formatStr = "urn:example: PAR sensor:PPFD"
 
 # Choice for random letter
 letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -33,7 +33,7 @@ iotmsg_payload ="""\
 
 iotmsg_data ="""\
      "data": {
-       "ppfd": %.1f
+       "PPFD": %.1f
      }
    }
 }"""
@@ -56,9 +56,9 @@ for counter in range(0, numMsgs):
   print iotmsg_payload % (formatStr)
 
   # Generate a random floating point number
-  randppfd = random.uniform(0.0, 2000.0) 
+  randPPFD = random.uniform(0.0, 2000.0) 
   if counter == numMsgs - 1:
     dataElementDelimiter = ""
-  print iotmsg_data % (randppfd) + dataElementDelimiter
+  print iotmsg_data % (randPPFD) + dataElementDelimiter
 
 print "]"
