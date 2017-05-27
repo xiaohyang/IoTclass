@@ -14,7 +14,7 @@ else:
 # Fixed values
 guidStr = "0-ZZZ12345678"
 destinationStr = "0-AAA12345678"
-formatStr = "urn:example:PAR sensor:PPFD μmol/m2/s"
+formatStr = "urn:example:PAR sensor:PPFD"
 
 # Choice for random letter
 letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
