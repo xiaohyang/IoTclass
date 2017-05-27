@@ -14,7 +14,7 @@ else:
 # Fixed values
 guidStr = "0-ZZZ12345678"
 destinationStr = "0-AAA12345678"
-formatStr = "urn:example:sensor:temp"
+formatStr = "urn:example:sensor:PPFD"
 
 # Choice for random letter
 letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -33,7 +33,7 @@ iotmsg_payload ="""\
 
 iotmsg_data ="""\
      "data": {
-       "PPFD": %.1f
+       "ppfd": %.1f
      }
    }
 }"""
