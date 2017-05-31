@@ -48,11 +48,11 @@ if __name__ == "__main__":
     ############ 
 
     # Search for specific IoT data values (assumes jsonLines are split(','))
-    dataValues = jsonLines.filter(lambda x: re.findall(r"PPFD.*", x, 0)) 
+    dataValues = jsonLines.filter(lambda x: re.findall(r"temperature.*", x, 0)) 
     dataValues.pprint(num=10000)
 
     # Parse out just the value without the JSON key
-    parsedValues = dataValues.map(lambda x: re.sub(r"\"PPFD\":", "", x))
+    parsedValues = dataValues.map(lambda x: re.sub(r"\"temperature\":", "", x))
 
     # Count how many values were parsed
     countMap = parsedValues.map(lambda x: 1).reduce(add)
