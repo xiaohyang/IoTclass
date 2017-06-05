@@ -36,8 +36,7 @@ iotmsg_data ="""\
        "ID": %d,
        "temperature": %.1f,
        "rumination": %.1f
-       
-             
+                    
      }
    }
 }"""
