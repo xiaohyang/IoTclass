@@ -75,7 +75,7 @@ if __name__ == "__main__":
             
             # Alert
             std = sqlContext.sql("select STDEVP(payload.data.rumination) from iotmsgsTable") 
-            print ("standard deviation =" std)
+            print ("standard deviation =" + str(std))
             if std > 80.0:
                 print ("Please check the herd")
             else:
