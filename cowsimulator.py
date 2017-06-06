@@ -61,7 +61,7 @@ for counter in range(0, numMsgs):
   # Generate a random floating point number
   randCow = random.randint(100, 999)
   randTemp = random.uniform(0.0, 15.0) + 30.0
-  randRumi = random.uniform(0.0, 800.0)
+  randRumi = random.uniform(0.0, 500.0) + 300.0
   
   if counter == numMsgs - 1:
     dataElementDelimiter = ""
