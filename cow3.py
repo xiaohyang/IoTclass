@@ -71,7 +71,7 @@ if __name__ == "__main__":
             sqlContext.sql("select payload.data.ID, payload.data.rumination from iotmsgsTable order by rumination desc").show(n=100)
            
             # Filter
-            sqlContext.sql("select payload.data.* from iotmsgsTable where payload.data.rumiation > 400.0").show(n=100)
+            sqlContext.sql("select payload.data.* from iotmsgsTable where payload.data.rumination > 400.0").show(n=100)
 
             # Clean-up
 	    sqlContext.dropTempTable("iotmsgsTable")
